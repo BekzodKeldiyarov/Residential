@@ -1446,9 +1446,10 @@ footer input {
   padding: 5px;
 }
 
-.apartment-popup-button:hover {
+.button-hover:hover {
   background-color: RGB(238, 153, 113);
   border-color: RGB(238, 153, 113);
+  color: #ffffff;
 }
 
 .apartment-popup-button:hover .apartment-popup-button-border{
