@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <title>Residential Complex</title>
+    <title>Главная</title>
 
     <!-- Bootstrap Scripts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -139,8 +139,8 @@
                             alt=""><i class="fa fa-fw fa-bars"></i></button>
 
                     <ul class="menu__inner">
-                        <li><a href="#"><span>Главная</span></a></li>
-                        <li><a href="#"><span>Pages</span></a>
+                        <li><a href="./index.html"><span>Главная</span></a></li>
+                        <li><a href="./services.html"><span>Преимущества</span></a>
                             <!-- <ul class="sub-dropdown">
                                 <li><a href="about-us.html"><span>About Us</span></a></li>
                                 <li><a href="services.html"><span>Services</span></a></li>
@@ -148,10 +148,10 @@
                                 <li><a href="contact.html"><span>Contact us</span></a></li>
                             </ul> -->
                         </li>
-                        <li><a href="#"><span>О нас</span></a></li>
-                        <li><a href="#"><span>Сервисы</span></a></li>
-                        <li><a href="#"><span>Blog</span></a></li>
-                        <li><a href="#"><span>Контакты</span></a></li>
+                        <li><a href="./about-us.html"><span>О нас</span></a></li>
+                        <li><a href="./getintouch.html"><span>Связаться с нами</span></a></li>
+                        <!-- <li><a href="#"><span>Blog</span></a></li>
+                        <li><a href="#"><span>Контакты</span></a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -1210,11 +1210,11 @@
                                     <form action="">
                                         <div class="">
                                             <input type="text" name="your-name" value size="40" aria-required="true"
-                                                aria-invalid="fasle" placeholder="Ваше имя" class="input-fotter">
+                                                aria-invalid="fasle" placeholder="Ваше имя" class="input-fotter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'">
                                         </div>
                                         <div class="">
                                             <input type="phone" name="your-number" value size="40"
-                                                placeholder="Ваш номер" class="input-fotter">
+                                                placeholder="Ваш номер" class="input-fotter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваш телефон'">
                                         </div>
                                         <div class="button-fotter">
                                             <button class="btn btn-expand-lg btn-outline-secondary" id="sumbit">

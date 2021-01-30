@@ -689,7 +689,7 @@ select {
 .rcl-au-page-title {
   text-align: center;
   height: 700px;
-  background-image: url(https://hendon.qodeinteractive.com/wp-content/uploads/2020/05/about-title-img-1.jpg);
+  background-image: url('./../img/main-slider/home-1-rev-background-3.jpg');
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -992,7 +992,7 @@ select {
   z-index: 10;
 } */
 #elementor-values {
-  padding: 0 0 130px;
+  padding: 0 20px 130px;
 }
 
 .elementor-col-50 {
@@ -1467,6 +1467,17 @@ select {
   position: relative;
 }
 
+@media(max-width: 575px) {
+  #elementor-slick {
+    /* -webkit-transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, -webkit-box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s; */
+    padding: 140px 0px 27px;
+    position: relative;
+  }
+}
+
 .elementor-slik-elememt {
   width: 100%;
   position: relative;
@@ -1773,7 +1784,7 @@ footer input {
     width: 420px;
   }
 
-  .elementor-section-col-50 .elementor-element{
+  .elementor-section-col-50 .elementor-element {
     padding: 27% 0% 0% 2%;
   }
 
@@ -1941,7 +1952,7 @@ footer input {
   }
 
   .elementor-stack-image-holder {
-    top: 20%!important;
+    top: 20% !important;
   }
 
 
@@ -2049,7 +2060,7 @@ footer input {
   }
 
   .elementor-stack-image-holder {
-    top: 20%!important;
+    top: 20% !important;
   }
 
   .elementor-m-text-ad {
@@ -2073,10 +2084,10 @@ footer input {
   }
 
 
-  }
+}
 
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
   #rcl-mobile-page-header {
     display: none;
   }
@@ -2091,12 +2102,13 @@ footer input {
   }
 
   .elementor-stack-image-holder {
-    top: 20%!important;
+    top: 20% !important;
   }
 
-  .qodef-e-image{
+  .qodef-e-image {
     width: 90%;
   }
+
   .elementor-pic-ad-container {
     width: 100%;
   }
@@ -2113,35 +2125,36 @@ footer input {
     width: 100%;
   }
 
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
+}
 
-    .logo-panda-left {
-      display: none;
-    }
-  
-    #rcl-mobile-page-header {
-      display: none;
-    }
-  
-    .media-image {
-      width: 18rem;
-    }
-  
-    .widgeht-holder {
-      display: none;
-    }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .logo-panda-left {
+    display: none;
   }
-  
-  @media (min-width: 1200px) {
-    .logo-panda-left {
-      display: none;
-    }
-  
-    header#rcl-mobile-page-header {
-      display: none;
-    }
+
+  #rcl-mobile-page-header {
+    display: none;
   }
+
+  .media-image {
+    width: 18rem;
+  }
+
+  .widgeht-holder {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-panda-left {
+    display: none;
+  }
+
+  header#rcl-mobile-page-header {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1440px) {
   .elementor-e-image {
@@ -2152,4 +2165,33 @@ footer input {
   .elementor-stack-image-holder {
     top: 20%;
   }
+}
+
+/* @media(max-width: 480px){
+  .rcl-menu-item-text{
+    font-size: 41px !important;
+  }
+} */
+
+@media(max-width: 576px){
+  .rcl-m-title,
+  .team-m-title{
+    font-size: 30px;
+  }
+  .rcl-m-title.entry-title, 
+  h2.title_ad,
+  .values-m-title{
+    font-size: 32px;
+  }
+}
+
+.owl-items {
+  margin: 0;
+}
+
+.owl-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

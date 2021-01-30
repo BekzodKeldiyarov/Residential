@@ -842,10 +842,17 @@ select {
   font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
   color: #000;
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   font-weight: 400;
   line-height: 1.09em;
   letter-spacing: 0.15em;
+}
+
+
+@media(min-width: 576px) {
+  .name-holder h1 {
+    font-size: 2.5rem;
+  }
 }
 
 .description-sold {
@@ -1273,9 +1280,9 @@ footer input {
     margin: auto;
   }
 
-  .elementor-section {
+  /* .elementor-section {
     width: 420px;
-  }
+  } */
 
   .footer-widgets {
     margin-bottom: 5%;
@@ -1399,6 +1406,9 @@ footer input {
 }
 
 
+
+
+
 .apartment-item .media-image {
   transition: all 0.5s;
 }
@@ -1406,6 +1416,8 @@ footer input {
 .apartment-item .media-image:hover {
   transform: translateY(-5px);
 }
+
+
 
 .popup {
   display: block;
@@ -1434,11 +1446,11 @@ footer input {
 .apartment-popup-button {
   position: absolute;
   bottom: -10px;
+  left: 50%;
+  margin-left: -200px;
   width: 400px;
   height: 50px;
   border-radius: 0px;
-  left: 50%;
-  margin-left: -200px;
   background-color: transparent;
   border: 1px solid #999;
   color: #ffffff;
@@ -1452,12 +1464,13 @@ footer input {
   color: #ffffff;
 }
 
-.apartment-popup-button:hover .apartment-popup-button-border{
+.apartment-popup-button:hover .apartment-popup-button-border {
   border: none;
 }
 
 
-.apartment-popup .apartment-item .position-popup .apartment-item {
+.apartment-popup .apartment-item,
+.position-popup .apartment-item {
   text-align: center;
   align-content: center;
   display: flex;
@@ -1482,10 +1495,6 @@ footer input {
 .position-popup .media-image {
   max-width: 65%;
   min-width: 50%;
-}
-
-.apartment-popup .apartment-item {
-  /* padding: 20px; */
 }
 
 .apartment-popup-button-border {
@@ -1536,6 +1545,15 @@ footer input {
 }
 
 
+.popup .apartment-item,
+.position-popup .apartment-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.9);
   /* border: 100px solid red; */
@@ -1560,6 +1578,7 @@ footer input {
   display: flex;
   justify-content: center;
   /* align-items: center; */
+  flex-wrap: wrap;
 }
 
 .full-slider-1 .rcl-widget-holderяяяяяя .widget {
@@ -1571,22 +1590,6 @@ footer input {
   left: 30px !important;
   top: auto !important;
   bottom: 10% !important;
-}
-
-.full-slider-1 .carousel-inner .carousel-item::after {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
-.my-body-noscroll-class {
-  overflow: hidden;
-}
-
-.popup .apartment-item,
-.position-popup .apartment-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* border: 1px solid red; */
 }
 
 .loupe::before {
@@ -1622,6 +1625,33 @@ footer input {
 
 #custom_html-2 a,
 #custom_html-3 a {
-  margin: 0 10px !important;
+  margin: 0 5px !important;
   min-width: 300px;
+}
+
+
+@media(max-width: 575px) {
+  .owl-items {
+    margin: 0 auto;
+  }
+
+  .widget {
+    margin: 0;
+  }
+
+}
+
+.owl-items {
+  margin: 0;
+}
+
+.owl-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-body-noscroll-class {
+  overflow: hidden;
 }

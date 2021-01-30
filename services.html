@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Преимущества</title>
 
     <!-- Bootstrap Scripts -->
 
@@ -16,6 +16,8 @@
 
     <!-- CSS Stylesheents -->
 
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style-about.css">
     <link rel="stylesheet" href="css/style-servises.css">
 
     <!-- Font Awesome -->
@@ -50,7 +52,7 @@
                     <nav class="rcl-header-navigation" role="navigation" aria-label="Divided Left Menu">
                         <ul id="menu-divided-menu-left" class="menu">
                             <li id="menu-item-25" class="menu-item">
-                                <a href="#">
+                                <a href="./index.html">
                                     <span class="rcl-menu-item-text">Главная</span>
                                     <span class="rcl-menu-arrow"></span>
                                 </a>
@@ -66,7 +68,7 @@
                                     <div class="drop-down-inner">
                                         <ul class="drop-down-menu">
                                             <li><a href="about-us.html"><span>About Us</span></a></li>
-                                            <li><a href="services.html"><span>Services</span></a></li>
+                                            <li><a href="services.html"><span>Services</span></a></Fli>
                                             <li><a href="getintouch.html"><span>Get in touch</span></a></li>
                                             <li><a href="contact.html"><span>Contact us</span></a></li>
                                         </ul>
@@ -404,26 +406,6 @@
                                                 в качественной постройке и развитии социальной инфраструктуры, но и в
                                                 своевременном заселении и послепродажном обслуживании..</p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element">
-                                    <div class="values-widget-container">
-                                        <a class="values-widget-shortcode" href="">
-                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                                                width="74px" height="40px" enable-background="new 0 0 74 40"
-                                                xml:space="preserve">
-                                                <g>
-                                                    <circle opacity="0.5" fill="none" stroke="#C28562" cx="71%" cy="50%"
-                                                        r="24%"></circle>
-                                                    <circle fill="none" stroke="#C28562" cx="71%" cy="50%" r="24%">
-                                                    </circle>
-                                                </g>
-                                                <polygon fill="#C28562"
-                                                    points="49.525,14.265 48.898,15.044 54.481,19.541 6.444,19.541 6.444,20.541 54.464,20.541 48.901,24.954 49.522,25.737 56.7,20.044 ">
-                                                </polygon>
-                                            </svg>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -783,40 +765,22 @@
                                                         <span class="rav-form-control-wrap your-name">
                                                             <input type="text" name="your-name" value="" size="40"
                                                                 class="rav-form-control" aria-required="true"
-                                                                aria-invalid="false" placeholder="Ваше имя">
+                                                                aria-invalid="false" placeholder="Ваше имя" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'">
                                                         </span>
                                                     </div>
                                                     <div class="rav-grid-item rav-col-12">
                                                         <span class="rav-form-control-wrap your-number">
                                                             <input type="phone" name="your-number" value="" size="40"
                                                                 class="rav-form-control" aria-required="true"
-                                                                aria-invalid="false" placeholder="Ваш номер">
+                                                                aria-invalid="false" placeholder="Ваш номер" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваш телефон'">
                                                         </span>
                                                     </div>
-                                                    <!-- <div class="rav-grid-item rav-col-6">
-                                                        <span class="rav-form-control-wrap your-date">
-                                                            <input type="date" name="your-date" value=""
-                                                                class="rav-form-control" aria-invalid="false">
-                                                        </span>
-                                                    </div>
-                                                    <div class="rav-grid-item rav-col-6">
-                                                        <span class="rav-form-control-wrap your-date">
-                                                            <select name="your-time"
-                                                                class="rav-form-control rav-form-select"
-                                                                aria-invalid="false">
-                                                                <option value="Time">Time</option>
-                                                                <option value="11:00">11:00</option>
-                                                                <option value="13:00">13:00</option>
-                                                                <option value="15:00">15:00</option>
-                                                            </select>
-                                                        </span>
-                                                    </div> -->
                                                 </div>
                                                 <div class="rav-grid-item-bottom rav-col-12">
                                                     <span class="rav-form-control-wrap your-message">
                                                         <textarea name="your-message" cols="40" rows="5"
                                                             class="rav-form-control" aria-invalid="false"
-                                                            placeholder="Сообщение"></textarea>
+                                                            placeholder="Сообщение" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Сообщение'"></textarea>
                                                     </span>
                                                 </div>
                                                 <div class="rav-grid-item-bottom rav-col-12">
@@ -933,11 +897,11 @@
                                     <form action="">
                                         <div class="">
                                             <input type="text" name="your-name" value size="40" aria-required="true"
-                                                aria-invalid="fasle" placeholder="Ваше имя" class="input-fotter">
+                                                aria-invalid="fasle" placeholder="Ваше имя" class="input-fotter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'">
                                         </div>
                                         <div class="">
                                             <input type="phone" name="your-number" value size="40"
-                                                placeholder="Ваш номер" class="input-fotter">
+                                                placeholder="Ваш номер" class="input-fotter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваш телефон'">
                                         </div>
                                         <div class="button-fotter">
                                             <button class="btn btn-expand-lg btn-outline-secondary" id="sumbit">
@@ -969,9 +933,7 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
         integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
         crossorigin="anonymous"></script>
@@ -979,22 +941,11 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                items: 7,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            });
-
-        });
-    </script>
+   
     <script src="https://tympanus.net/Development/ElasticSVGElements/js/classie.js"></script>
     <script src="https://tympanus.net/Development/ElasticSVGElements/js/snap.svg-min.js"></script>
     <script src="./js/dropdown-menu.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 
 </html>
