@@ -1,0 +1,121 @@
+/*=====  End of Full Slider-1  ======*/
+.full-slider-1 .carousel-inner {
+  height: 100vh;
+  cursor: move;
+}
+.full-slider-1 .carousel-inner .carousel-item {
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.full-slider-1 .carousel-inner .carousel-item h2 {
+  font-size: 3.7rem;
+  font-weight: 600;
+}
+.full-slider-1 .carousel-inner .carousel-item p {
+  font-size: 1rem;
+  margin: 10px 0 25px;
+}
+.full-slider-1 .carousel-inner .carousel-item::after {
+  background-color: rgba(0, 0, 0, 0.55);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.full-slider-1 .carousel-inner .carousel-item .carousel-caption {
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: auto;
+  right: 10%;
+  padding: 0 40px;
+}
+.full-slider-1 .carousel-inner .carousel-item .carousel-caption h2, .full-slider-1 .carousel-inner .carousel-item .carousel-caption p, .full-slider-1 .carousel-inner .carousel-item .carousel-caption .btn {
+  visibility: hidden;
+  opacity: 0;
+}
+.full-slider-1 .carousel-inner .carousel-item .carousel-caption .btn:after {
+  border-radius: 40px;
+  right: 100%;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.full-slider-1 .carousel-inner .carousel-item .carousel-caption .btn:hover:after {
+  right: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  opacity: 1;
+  visibility: visible;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption h2, .full-slider-1 .carousel-inner .carousel-item.active .carousel-caption p, .full-slider-1 .carousel-inner .carousel-item.active .carousel-caption .btn {
+  visibility: visible;
+  opacity: 1;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.first-slide h2 {
+  animation: 1500ms ease-in-out 0s normal none 1 running bounceInDown;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.first-slide p {
+  animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.first-slide .btn {
+  animation: 1500ms ease-in-out 0s normal none 1 running bounceInUp;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.second-slide h2 {
+  animation: 1500ms ease-in-out 0s normal none 1 running bounceInLeft;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.second-slide p {
+  animation: 1500ms ease-in-out 0s normal none 1 running fadeInRight;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.second-slide .btn {
+  animation: 1500ms ease-in-out 0s normal none 1 running bounceInDown;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.third-slide h2 {
+  animation: 1500ms ease-in-out 0s normal none 1 running bounceInRight;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.third-slide p {
+  animation: 1500ms ease-in-out 0s normal none 1 running fadeInLeft;
+}
+.full-slider-1 .carousel-inner .carousel-item.active .carousel-caption.third-slide .btn {
+  animation: 1500ms ease-in-out 0s normal none 1 running bounceInUp;
+}
+.full-slider-1 .carousel-indicators {
+  display: block;
+  left: auto;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 2%;
+  top: 0;
+}
+.full-slider-1 .carousel-indicators li {
+  background-color: #fb5b21;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+  position: relative;
+}
+.full-slider-1 .carousel-indicators li.active:after {
+  background-color: #ffffff;
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  height: 20px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  animation: 250ms ease-in-out 0s normal none 1 running bounceInDown;
+}
+
+/*=====  End of Full Slider-1  ======*/

@@ -1,0 +1,64 @@
+/*==================================
+=            common css            =
+==================================*/
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn.btn-primary {
+  background-color: #fb5b21;
+  border: medium none;
+  border-radius: 40px;
+  box-shadow: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.8rem 2.6rem;
+  position: relative;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn.btn-primary:after {
+  background-color: #ffffff;
+  border-radius: 4px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  top: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.btn.btn-primary:focus, .btn.btn-primary:hover {
+  box-shadow: none !important;
+  outline: 0 !important;
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*=====  End of common css  ======*/
