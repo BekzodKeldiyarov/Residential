@@ -779,7 +779,7 @@ select {
 /* Header-out-page */
 
 #rcl-au-page-outer {
-  margin-top: -130px;
+  margin-top: -150px !important;
   position: relative;
 }
 
@@ -1591,6 +1591,9 @@ footer input {
   top: auto !important;
   bottom: 10% !important;
 }
+.full-slider-1 .carousel-inner{
+  cursor: default !important;
+}
 
 .loupe::before {
   content: "";
@@ -1654,4 +1657,104 @@ footer input {
 
 .my-body-noscroll-class {
   overflow: hidden;
+}
+
+.navbar {
+  z-index: 2;
+  background-color: transparent !important;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+
+.navbar-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-item a.nav-link {
+  color: #ffffff !important;
+  font-size: 11px;
+  line-height: 2.09em;
+  letter-spacing: .3em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-brand img {
+  width: 70px;
+}
+
+.nav-item a.nav-link::after {
+
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  background-color: #fff;
+  transform-origin: 0%;
+  transition: all 0.5s;
+  opacity: .4;
+}
+
+.nav-item a.nav-link:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+@media(max-width: 991px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .navbar .container-fluid {
+    background-color: rgba(195, 130, 98, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    padding: 10px 20px;
+
+  }
+
+  .nav-item .navbar-brand {
+    display: none;
+  }
+
+  /* 
+  .navbar .show {
+    background-color: #C38262 !important;
+  } */
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+}
+
+@media(min-width: 992px) {
+  .navbar-brand-hide {
+    display: none;
+  }
+
+  .rcl-au-m-content {
+    align-items: center !important;
+  }
+
+  #rcl-au-page-outer{
+    min-height: 300px;
+  }
 }

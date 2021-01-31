@@ -2173,15 +2173,29 @@ footer input {
   }
 } */
 
-@media(max-width: 576px){
+@media(max-width: 576px) {
+
   .rcl-m-title,
-  .team-m-title{
+  .team-m-title {
     font-size: 30px;
   }
-  .rcl-m-title.entry-title, 
+
+  .rcl-m-title.entry-title,
   h2.title_ad,
-  .values-m-title{
-    font-size: 32px;
+  .values-m-title {
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .rcl-m-title,
+  .team-m-title {
+    font-size: 42px;
+  }
+
+  .rcl-au-page-title h1 {
+    font-size: 2.5em;
   }
 }
 
@@ -2194,4 +2208,33 @@ footer input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media(max-width: 991px) {
+  #rcl-au-page-outer {
+    min-height: 400px;
+    margin-top: 98px !important;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .navbar .container-fluid {
+    background-color: rgba(195, 130, 98, 1) !important;
+    /* background-color: rgba(0, 0, 0, 0.4) !important; */
+    padding: 10px 20px;
+
+  }
+
+  .nav-item .navbar-brand {
+    display: none;
+  }
 }
